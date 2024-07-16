@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color: palegreen;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <script>
+
+        //이벤트 리스너 261쪽, 393쪽~
+        const $box = document.querySelector("#box");
+        // 마우스 올리면
+        $box.addEventListener("mouseenter", () => {
+            $box.style.backgroundColor = "hotpink";
+        })
+
+        // 마우스 벗어나면
+        $box.addEventListener("mouseleave", () => {
+            $box.style.backgroundColor = "blue";
+        })
+    </script>
+</body>
+
+</html>

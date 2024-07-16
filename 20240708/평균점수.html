@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let num = 7;
+        // if (num % 2 === 0) {
+        //     console.log("짝수");
+        // } else{
+        //     console.log("홀수");
+        // }
+
+        let kr = Number(prompt("국어 점수를 입력하세요."));
+        let mt = Number(prompt("수학 점수를 입력하세요."));
+        let en = Number(prompt("영어 점수를 입력하세요."));
+        let avg = (kr + mt + en) / 3;
+        document.write("국어+수학+영어 평균 점수는" + avg + "입니다.<br>");
+        
+        if (90 <= avg && avg <= 100) {
+            document.write("A");
+        } else if (80 <= avg && avg < 90) {
+            document.write("B");
+        } else if (70 <= avg && avg < 80) {
+            document.write("C");
+        } else if (60 <= avg && avg < 70) {
+            document.write("D");
+        } else {
+            document.write("F");
+        }
+    </script>
+
+</body>
+
+</html>

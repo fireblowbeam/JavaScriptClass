@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            /* 표의 테두리를 한 줄로 표시(붕괴하다)*/
+        }
+        th, td{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>텍스트 링크 만들기</h1>
+    <p>문단 태크 내용 안에서 <a href="http://www.naver.com" target="_blank">링크부분 네이버</a>로 이동</p>
+
+    <!--
+        a태그 속성 정리
+        _blank : 링크 내용이 새 창이나 새 탭에서 열립니다.
+        _self : target속성의 기본 값
+        _parent : 프레임을 사용했을 때 링크 내용을 부모 프레임에 표시
+        _top : 프레임에서 벗어나 링크 내용을 전체화면에 표시
+            아이프레임<iframe>에 적용해보기
+    -->
+    <a href="">구글사이트 <img src="구글로고검색" alt=""></a> 구글사이트 <img src="../https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    <br><br>
+    <iframe src="test.html"frameborder="1"></iframe>
+    <iframe src="https://www.google.com/maps/place/%EC%97%90%EC%9D%B4%EC%BD%98%EC%95%84%EC%B9%B4%EB%8D%B0%EB%AF%B8+%EA%B0%95%EB%82%A8%EC%A0%90/data=!4m10!1m2!2m1!1z7JeQ7J207L2YIOyVhOy5tOuNsOuvuA!3m6!1s0x357ca159d4b10f83:0xc672380e5228aa2e!8m2!3d37.4988896!4d127.0315494!15sChbsl5DsnbTsvZgg7JWE7Lm0642w66-4kgEYY29tcHV0ZXJfdHJhaW5pbmdfc2Nob29s4AEA!16s%2Fg%2F11c5hkcnbd?hl=ko&entry=ttu"
+    
+
+    <pre>
+                            <b>Modern browser</b>
+    </pre>
+    <caption> 국내에서 자주 사용하는 모던 브라우저</caption>
+    <table>
+        <thead>
+            <tr>
+                <th>브라우저</th>
+                <th>제조업체</th>
+                <th>다운로드</th>
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <th>크롬(Chrome)</th>
+                <td>Google</td>
+                <td> <a href="https://www.google.com/chrome/" target="_blank"></a></td>
+            </tr>
+            <tr>
+                <td>파이어폭스</td>
+                <td>Mozila</td>
+                <td> <a href="https://www.mozila.org./firefox target=_blank"></a></td>
+            </tr>
+            <tr>
+                <td>엣지</td>
+                <td>Mircrosoft</td>
+                <td></td>
+            </tr>
+        </body>
+    </table>
+
+</body>
+</html>

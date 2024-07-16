@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>시간에 따라 변하는 이미지</h1>
+    </div>
+
+    <script>
+      const today = new Date();
+      const hrs = today.getHours();
+      const container = document.querySelector("#container");
+
+      let newImg = document.createElement("img");
+      newImg.src = (hrs < 8) ? "../images/벌새4.jpg" : "../images/벌새6.jpg";
+      container.appendChild(newImg);
+    </script>
+  </body>
+</html>

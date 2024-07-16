@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table.html</title>
+</head>
+<body>
+    <table border>
+        <caption>색깔의 종류</caption>
+        <thead>
+            <tr>
+                <th>종류</th><th colspan="2" style="background-color: yellowgreen;">비비드</th><th>파스텔</th><th>어두운계열</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td><td>빨강</td><td>분홍색</td><td>검정</td>
+            </tr>
+            <tr>
+                <td>2</td><td>파랑</td><td rowspan="2" style="background-color: skyblue;">하늘색</td><td>남색</td>
+            </tr>
+            <tr>
+                <td>3</td><td>노랑</td><td>회색</td>
+            </tr>
+        </tbody>
+
+        <ftoot>
+            <tr>
+                <td>합계</td><td>3개</td><td>2개</td><td>3개</td>
+            </tr>
+        </ftoot>
+    </table>
+    표의 끝
+    
+    <h3>상품구성</h3>
+    <table>
+        <table border>
+            <caption>색깔의 종류123</caption>
+            <thead>
+                <tr>
+                    <th>용도</th><th>중량</th><th>개수</th><th>가격</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2">실속형</td><td>3kg</td><td>11~16과</td><td>17,000원</td>
+                </tr>
+                <tr>
+                    <td>5kg</td><td>18~25과</td><td>25,000원</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">고급형</td><td>3kg</td><td>11~16과</td><td>28,000</td>
+                </tr>
+                <tr>
+                    <td>5kg</td><td>18~25과</td><td>47,000</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+            </tfoot>
+        </table>
+    </table>
+
+    <!--
+        table 표 전체를 담는 컨테이너
+        caption 표 제목
+        thead 해당 셀 그룹
+        tfoot 바닥 셀 그룹
+        tbody 데이터 셀 그룹
+        tr 행,여러 개의 td, th 포함
+        th 제목(해당) 셀: 두꺼운 글꼴
+        td 데이터 셀(칸)
+    -->
+
+    <table border>
+        
+        <caption>실습1-3 셀 합치기 연습</caption>
+        <thead>
+            <tr>
+                <th style="background-color: bisque;">이름</th><td style="background-color: bisque;">전지형</td><th style="background-color: bisque;">별명</th><td style="background-color: bisque;">찌롱</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th style="background-color: aquamarine;">주소, 전공, 좋아하는 것</th><td colspan="4" style="background-color: aquamarine;">안드로메다, 무, 곤충</td>
+            </tr>
+            <tr>
+                <th style="background-color: blueviolet;">공부하는 것</th><td colspan="4" style="background-color: blueviolet;">독서</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation 연습</title>
+    <style>
+        section {
+            margin: 0;
+            background: url(../images/태양과지구.jpg) no-repeat;
+            background-size: cover;
+            height: 1200px;
+            width: 100%;
+        }
+
+        .firstPart {
+            color: aliceblue;
+            font-size: 50px;
+            position: absolute;
+            top: 52%;
+            right: 5%;
+            animation: moveIn 4s ease-in-out;
+        }
+
+        @keyframes moveIn {
+            from {
+                right: -30%;
+                opacity: 0;
+            }
+
+            to {
+                right: 5%;
+                opacity: 0.8;
+            }
+        }
+
+        .secPart {
+            color: antiquewhite;
+            font-size: 30px;
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            animation: moveleft 2s ease-in-out;
+        }
+
+        @keyframes moveleft {
+            from {
+                left: -10%;
+                opacity: 0;
+            }
+
+            to {
+                right: 5%;
+                opacity: 0.8;
+            }
+        }
+
+        .trPart {
+            color: azure;
+            font-size: 50px;
+            position: absolute;
+            bottom: 0%;
+            right: 5%;
+            animation: moveBottom 8s ease-in-out;
+        }
+
+        @keyframes moveBottom {
+            from{
+                right: -10%;
+                opacity: 0;
+        }to{
+            right: 5%;
+            opacity: 0.8;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="firstPart">
+            <span> 뭐 먹지?</span> <br>
+            <p>
+                제육?<br>
+                돈까스?<br>
+            </p>
+        </div>
+
+        <pre class="secPart">
+            오늘 점심
+        </pre>
+
+        <div class="trPart">
+            <pre>
+        <span>굶자</span>
+        </pre>
+        </div>
+
+    </section>
+</body>
+
+</html>

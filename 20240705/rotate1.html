@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate</title>
+    <style>
+        .origin{
+            perspective: 200px;
+            border: 1px solid;
+            width: 300px;
+            height: 200px;
+            margin: 50px;
+        }
+        
+        .rotateX{
+            transform: rotateX(45deg);
+        }
+        .rotatey{
+            transform: rotateY(45deg);
+        }
+        .rotatez{
+            transform: rotateZ(45deg);
+        }
+        .rotatexyz{
+            transform:rotate3d(2.5, -1.5, 45deg);
+        }
+    </style>
+</head>
+<body>
+    <h2> 이미지 3차원 회전하기</h2>
+    <div class="origin">
+        <div class="rotateX"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    <div class="origin">
+        <div class="rotateY"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatez"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    <div class="origin">
+        <div class="rotatexyz"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    
+</body>
+</html>

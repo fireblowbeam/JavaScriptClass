@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한국주택공사</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        body {
+            background-color: rgb(246, 248, 253);
+        }
+
+        li {
+            list-style: none;
+            text-align: left;
+            margin-left: 25px;
+            padding-top: 10px;
+            
+        }
+
+        .box1 {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            text-align: center;
+            transition-property: height;
+            /*트렌지션 대상*/
+            transition-delay: 0s;
+            /*지연 시간*/
+            transition-duration: 0s;
+            /*실행시간: 너비2초, 높이1초*/
+            
+        }
+
+        .box1:hover {
+            height: 400px;
+            /* transform: rotateY(10); */
+            transform: translateY(-20px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: 0.5s linear;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            text-align: center;
+            transition-property: height;
+            transition-delay: 0s;
+            transition-duration: 0;
+        }
+        .box2:hover {
+            height: 400px;
+            transform: translateY(-20px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: 0.5s linear;
+        }
+        
+        .box3 {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            text-align: center;
+            transition-property: height;
+            transition-delay: 0s;
+            transition-duration: 0;
+        }
+        .box3:hover {
+            height: 400px;
+            transform: translateY(-20px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            transition: 0.5s linear;
+        }
+
+        .p1 {
+            color: rgb(41, 116, 202);
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .p2 {
+            color: rgb(41, 116, 202);
+            font-weight: bold;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <ul>
+            <div class="box1">
+                <li>
+                    <h2>아낌e론-보금자리론</h2>
+                </li>
+                <li>0.1%p더 저렴한 금리</li>
+                <br>
+                <div class="p1">
+                    <li>최대</li>
+                </div>
+                <div class="p2">
+                    <li>주택가격 6억원</li>
+                </div>
+                <img src="../images/닭가족.jpg" width="150px" height="150px">
+        </ul>
+        </div>
+
+        <ul>
+            <div class="box2">
+                <li>
+                    <h2>u-보금자리론</h2>
+                </li>
+                <li>우리가족의 소중한 보금자리 마련</li>
+                <br>
+                <div class="p1">
+                    <li>최대</li>
+                </div>
+                <div class="p2">
+                    <li>대출한도 3.6억원</li>
+                </div>
+                <img src="../images/개가족.jpg" width="150px" height="150px">
+        </ul>
+        </div>
+
+
+        <ul>
+            <div class="box3">
+                <li>
+                    <h2>내집마련 디딤돌</h2>
+                </li>
+                <li>내 집 마련 꿈의 실현</li>
+                <div class="p1">
+                    <li>무주택 세대주 대상</li>
+                </div>
+                <div class="p2">
+                    <li>저금리<br>
+                        주택구입자금 대출</li>
+                    </div>
+                    <img src="../images/고양이가족.jpg" width="150px" height="150px">
+        </ul>
+        </div>
+    </section>
+</body>
+
+</html>

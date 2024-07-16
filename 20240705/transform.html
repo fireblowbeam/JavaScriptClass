@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>246쪽 변환 transform:translate</title>
+    <style>
+        .origin{
+            border: 1px solid;
+            width: 200px; 
+        }
+        .movexX:hover{
+            transform: translateX(50px); /*마우스 오버시 오른쪽으로 이동*/
+        }
+        .movexY:hover{
+            transform: translateY(50px)/*마우스 오버시 아래으로 이동*/
+        }
+        .movexXY:hover{
+            transform: translate(50px, 20px);/*마우스 오버시 사선으로 이동*/
+        }
+    </style>
+</head>
+<body>
+    <h2> 246쪽 변환 transform트랜스폼</h2>
+    <p>
+        특정 요소의 크기나 형태가 변하는 것을 변형(변환) 또는
+        트랜스폼이라고한다. 사용자의 동작에 반응해 텍스트나
+        이미지 등을 움직이게 할 수 있다. 
+        2차원(x ,y) / 3차원(x, y, z) : 원근감의 표현
+        z축 앞뒤로 이동하는데 가까워지고 멀어진다.
+        
+        위치이동: translate
+        확대/축소: initial-scale
+        회전: rotate
+        기울임: skew
+    </p>
+
+    <div class="origin">
+        <div class="movexX"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    <div class="origin">
+        <div class="movexY"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+
+    <div class="origin">
+        <div class="movexXY"><img src="../images/검은고양이.jpg" width="100px"></div>
+    </div>
+</body>
+</html>

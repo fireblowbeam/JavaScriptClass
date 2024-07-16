@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+        }
+        ul{
+            list-style-type: none;
+            text-align: 0;
+        }
+        
+        .dropbtn1:hover .dropdown-content, .dropbtn2:hover .dropdown-content, .dropbtn3:hover .dropdown-content{
+            display: block; /**/
+        }
+        .dropbtn1, .dropbtn2, .dropbtn3{
+            background-color: blueviolet;
+            width: 300px;
+            font-weight: bold;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        .dropdown-content li a{
+            text-decoration: none;
+            color: blue;
+        }
+        .dropdown-content{
+            display: none; /*안 보이게*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <ul class="dropbtn1"> 드롭다운1
+        <div class="dropdown-content">
+            <li><a href="#">서브메뉴1</a></li>
+            <li><a href="#">서브메뉴2</a></li>
+            <li><a href="#">서브메뉴3</a></li>
+        </div>
+    </ul>
+
+    <ul class="dropbtn2"> 드롭다운2
+        <div class="dropdown-content">
+            <li><a href="#">서브메뉴1</a></li>
+            <li><a href="#">서브메뉴2</a></li>
+            <li><a href="#">서브메뉴3</a></li>
+        </div>
+    </ul>
+
+    <ul class="dropbtn3"> 드롭다운3
+        <div class="dropdown-content">
+            <li><a href="#">서브메뉴1</a></li>
+            <li><a href="#">서브메뉴2</a></li>
+            <li><a href="#">서브메뉴3</a></li>
+        </div>
+    </ul>
+</section>
+</body>
+</html>

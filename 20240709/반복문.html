@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //1부터 5까지 더하기
+        let sum = 0;
+        sum += 1; //sum = sum + 1과 같다.
+        sum += 2; 
+        sum += 3; 
+        sum += 4; 
+        sum += 5; 
+       
+        document.write("1부터 5까지 합 " + sum + "<br>")
+        document.write(`1부터 5까지 합 ${sum}입니다<br>`)
+
+        //for문으로 1부터 5까지 더하기
+        let sumFor = 0;
+        for(let i=1; i<6; i++){
+            sumFor += i; //sumFor = sumFor + i
+        }
+        document.write(`1부터 5까지 합 ${sumFor}입니다.<br>`)
+
+        //for문으로 1000까지 더하기 - 해보기
+        let abc = 0;
+        
+        // for(abc = 0; abc <= 1000; abc++) {
+        //     document.write(`${abc} 1000이 되면 종료<br>`)
+        // }
+        
+        // 짝수 더하기 방법1 - 해보기
+        let eN = 2;
+        
+        for(eN = 2; eN <= 100; en +=2) {
+          
+            document.write(`${eN}, 100이 되면 종료<br>`)
+            document.write(`${eN}`)
+            
+        } //짝수로만 출력, 2씩 더하기
+        // 별찍기 303쪽 // 정수입력받아 별 문자 출력하기
+
+        // 짝수 더하기 방법 2
+        // let n = 10;
+        // let sumE = 0;
+        // for(let i = 1; i<=n; i++){
+        //     if(i%2===1) //i가 홀수라면 건너뜀// 나머지가 1이면
+        //     continue
+        //     sume += i;
+        //     document.write(i + "______" + sumE + "<br>")
+        // }
+
+        let sumE = 0;
+        for(let i=1; i<=10; i++)
+            if(i%2===0){ // 만약에(조건)}
+                sumE += i; //조건에 해당되면 실행
+                document.write(i + "____" + sume + "<br>")
+        }
+        //291
+        //for문은 조건식이 true인 동작 작업문을 반복하여 실행한다
+        
+        for(let i=0; i<10; i++){
+            document.write(i);
+        }
+        
+        //hello!를 줄바꿈으로 5번 찍기.
+    </script>
+</body>
+</html>

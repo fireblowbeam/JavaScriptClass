@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 600px;
+    background-color: rgba(211, 211, 211, 0.533);
+
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.leftside {
+    width: 30%;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.leftside a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.look:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+h2 {
+    font-size: 15px;
+}
+
+p {
+    text-decoration: underline;
+}
+
+.middleside {
+    margin-top: 40px;
+}
+
+.middleside a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.middleside a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.middleside1 {
+    margin-top: 40px;
+    margin-left: 150px;
+}
+
+.middleside1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.middleside1 a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.middleside2 {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.middleside2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.middleside2 a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.middleside3 {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.middleside3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.middleside3 a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.bar {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: rgba(211, 211, 211, 0.533);
+}
+
+img:hover {
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+footer button {
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    right: 180px;
+    top: 530px;
+}
+
+footer button:hover {
+    cursor: pointer;
+}

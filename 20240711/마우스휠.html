@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 휠 이벤트</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>마우스 휠을 사용해보세요!</h1>
+    <script>
+        document.addEventListener('wheel', function(event) {
+            if (event.deltaY < 0) {
+                // 휠을 위로 스크롤
+                document.body.style.backgroundColor = 'lightblue';
+            } else {
+                // 휠을 아래로 스크롤
+                document.body.style.backgroundColor = 'lightcoral';
+            }
+        });
+    </script>
+</body>
+</html>

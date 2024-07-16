@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li class="check">&check;할 일1</li>
+                <li class="check">&check;할 일2</li>
+                <li class="check">&check;할 일3</li>
+                <li class="check">&check;할 일4</li>
+            </ul>
+        </div>
+    </body>
+
+    <script>
+        let clickAll = document.querySelectorAll(".check")
+
+            for(i = 0; i < clickAll; i++) {
+                clickAll[i].addEventListener("click", function(){
+                    clickAll[i].style.color = "red";
+
+                })
+            }
+        
+        
+    </script>
+    </html>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+    <style>
+        h2{background-color: rgb(138, 221, 113); color: white;}
+        #innerH{
+            width: 300px;
+            height: 200px;
+            border: dashed 5px palevioletred;
+            margin-bottom: 15px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h2> innerHTML을 써봅시다. </h2>
+    <!-- 이곳에 들어갈 내용 -->
+     <div id="innerH"></div>
+
+     <button onclick="subway()">subway버튼</button>
+     <button onclick="bus()">Bus버튼</button>
+     <button onclick="javascripte:bus()">Bus버튼</button>
+
+     <script>
+        function subway() {
+            let name = "subway";
+            let city = "홍대역";
+            console.log(name + city);
+            document.getElementById('innerH').innerHTML+=(name+city);
+        }
+        function bus() {
+            let name = 1234;
+            let stop = "신촌역";
+            console.log(name + stop);
+            document.getElementById('innerH').innerHTML+=(name+stop);
+        }
+     </script>
+</body>
+</html>

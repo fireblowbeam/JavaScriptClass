@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 자바스크립트 이벤트 </title>
+    <style>
+        #desc{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="item">
+        <img src="../images/병아리.jpg" width="300">
+        <button onclick="showDetail()" id="open"> 상세 설명 보기 </button>
+        <div id="detail">
+            <h4>뉴진스</h4>
+            <p>
+                아직 다 자라지 않은 닭의 새끼로, 인간에 비유하면 출생 직후
+                부터 어린이 단계까지를 의미한다.[1] 보통 닭의 새끼만 병아
+                리로 지칭하는 게 아니라 가금상목[2], 고악류[3]의 새끼들처
+                면 저체온증 때문에 쉽게 죽기 때문에 예전엔 키우기는 어려웠
+                으나[4] 요즘엔 환경만 제대로 갖추어 저체온증만 대비해주면 
+                비교적 쉽게 키울 수 있다.
+            </p> 
+            <button onclick="hideDetail()" id="close"> 상세 설명 닫기</button>
+        </div>
+    </div>
+
+    <script>
+        //상세 설명 부분을 화면에 표시
+        function showDetail(){
+            document.querySelector(`#detail`).style.display="block";
+            document.querySelector(`#open`).style.display="none";
+        }
+        // 상세 설명 부분을 화면에 감춤
+        function hideDetail() {
+            document.querySelector('#detail').style.display="none";
+            document.querySelector('#open').style.display="block";
+        }
+    </script>
+</body>
+</html>

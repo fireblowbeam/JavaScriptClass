@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15단</title>
+    <script>
+        function fifty (n) {
+            let a = parseInt(n);
+            if(isNaN(a) || 1 > a || a >15 ) {
+                alert("back");
+                return;
+            }
+            for(i=1; i <=15; i++) {
+                document.write( + a +" X" + i + "=" + (a*i) + "<br>")
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>1~15단</h3>
+    <hr>
+    <script>
+        let  n = prompt("원하는 1~15단수를 입력하세요")
+        fifty (n);
+    </script>
+</body>
+</html>

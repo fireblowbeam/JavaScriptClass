@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        .pic1{
+            display: block;
+        }
+        .pic2{
+            display: none;
+        }
+        .pic1.active{
+            display: none;
+        }
+        .pic2.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="../images/검은고양이.jpg" class="pic1">
+    <img src="../images/고양이가족.jpg" class="pic2">
+    <button class="toggleBtn">버튼클릭</button>
+
+    <script>
+        const toggleBtn = document.querySelector(".toggleBtn");
+        const pic1 = document.querySelector(".pic1");
+        const pic2 = document.querySelector(".pic2");
+
+        toggleBtn.addEventListener("click", () =>{
+            pic1.classList.toggle("active");
+            pic2.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 책</title>
+    <style>
+        .page {
+            display: none;
+            height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .page.active {
+            display: block;
+        }
+        .navigation {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="page1" class="page active">
+        <h1>첫 번째 페이지</h1>
+        <p>이곳은 첫 번째 페이지입니다.</p>
+    </div>
+    <div id="page2" class="page">
+        <h1>두 번째 페이지</h1>
+        <p>이곳은 두 번째 페이지입니다.</p>
+    </div>
+    <div id="page3" class="page">
+        <h1>세 번째 페이지</h1>
+        <p>이곳은 세 번째 페이지입니다.</p>
+    </div>
+    
+    <div class="navigation">
+        <button onclick="previousPage()">이전 페이지</button>
+        <button onclick="nextPage()">다음 페이지</button>
+    </div>
+
+    <script>
+        let currentPage = 1;
+        const totalPages = 3;
+
+        function showPage(pageNumber) {
+            for (let i = 1; i <= totalPages; i++) {
+                const page = document.getElementById(`page${i}`);
+                if (i === pageNumber) {
+                    page.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                }
+            }
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+    </script>
+</body>
+</html>

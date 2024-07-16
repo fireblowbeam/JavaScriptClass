@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: center; /*좌우관계정렬*/ 
+            align-content: center; /* align-items상하관계정렬*/
+            border: solid 1px gray;
+       }
+       .big-box{
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .small-box{
+        width: 100px;
+        height: 100px;
+        background-color: olivedrab;
+        display: flex;
+        position: absolute;
+        top: 50px;
+       }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="big-box">div1</div>
+            <div class="small-box">div2</div>
+    </section>
+</body>
+</html>
