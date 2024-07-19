@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            width: 1200px;
+           
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        header{
+            border: 1px solid black;
+            height: 100px;
+           
+            position: relative;
+        }
+
+        nav{
+            height: 60px;
+            border: 1px solid black;
+            
+        }
+
+        section{
+            /* height: 400px;
+            background-color: aqua; */
+
+        }
+
+        footer{
+            width: auto;
+            height: 100px;
+            border: 1px solid black;
+            /* background-color: blueviolet; */
+            display: flex;
+            padding: 10px;
+        }
+
+        footer > div{
+            width: 33%;
+            /* border: 1px solid black;
+            height: 100px;
+            line-height: 100px; */
+            
+        }
+
+        header .img{
+            width: 200px;
+            height: 60px;
+            background-image: url();
+            background-size: center;
+            background-position: center;
+            position: absolute;
+            left: 30px;
+            top: 10px;
+        }
+
+        header .search{
+            width: 300px;
+            height: 50px;
+            border: 1px solid black;
+           
+
+            display: flex;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .search input{
+            width: 230px;
+            margin-left: 20px;
+
+            border: none;
+            outline: none;
+        }
+        
+        .search_btn{
+            margin-top: 5px;
+            width: 40px;
+            height: 40px;
+            background-color: antiquewhite;
+            background-image: url(data:image/jpeg;base64,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);
+            background-position: center;
+            background-size: cover;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+            /*목록만들기*/
+            *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section ul{
+            width: 900px;
+            /* border: 1px solid black; */
+
+            list-style: none;
+
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        section ul li{
+            width: 280px;
+            height: 300px;
+            border: 1px solid gray;
+
+            padding: 10px;
+            box-sizing: border-box; /*패딩을 추가해도 박스의 크기가 커지지 않음*/
+            margin: 5px;
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <header>
+            <!--로고 이미지-->
+            <div class="img"></div>
+
+            <!--검색바-->
+            <div class="search">
+                <input type="text">
+                <div class="search_btn"></div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="joinus.html">회원가입</a></li>
+                <li><a href="index4.html">홈으로</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <ul>
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+        
+                <li>
+                    <img src="../images/img01.png">
+                    <p>자바웹개발과정</p>
+                    <p>07.01개강</p>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <div><img src="../images/footer_acorn.png"></div>
+            <div>COPYRIGHT(C) HBILAB ALL RIGHTS</div>
+            <div> (주)에이콘이즈 에이콘아카데미(홍대)</div>
+        </footer>
+    </div>
+
+</body>
+</html>
