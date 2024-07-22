@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스토어 기획전 만들기</title>
+  <link rel="stylesheet" href="조별메뉴만들기.css">
+  <style>
+    section {
+      width: 100%; /* 변경: 전체 너비 100%로 설정 */
+      height: 945px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img_wrap {
+      width: 283px;
+      height: 945px;
+    }
+
+    .img_left {
+      width: 283px;
+      height: 552px;
+      background-image: url("../acorn/images/캠핏 왼쪽 이미지.png");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .wrap1 {
+      width: 530px;
+      height: 440px;
+      border: 1px solid;
+    }
+
+    .headerInBox {
+      width: 500px;
+      height: 52px;
+      border: 1px solid;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px;
+      padding: 5px;
+    }
+
+    .headerInBox_right {
+      width: 24px;
+      height: 24px;
+      background-image: url("../acorn/images/돋보기.png");
+      background-size: 24px 24px;
+    }
+
+    .headerInBox_right a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-top: 20px; /* 배너와 다른 요소 사이 여백 추가 */
+    }
+
+    .images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .image {
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="img_wrap">
+      <div class="img_left">
+        <!-- 배경 이미지 추가 -->
+      </div>
+    </div>
+
+    <div class="wrap1">
+
+      <header>
+        <div class="headerInBox">
+          <div class="headerInBox_left">
+            <a href="스토어">스토어</a>
+          </div>
+          <div class="headerInBox_right">
+            <a href="#">
+              <img src="../acorn/images/돋보기.png" alt="돋보기 아이콘" width="24" height="24">
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="banner">
+        <div class="images">
+          <img class="image" src="../acorn/images/캠핑1.jpg" alt="이미지 1">
+          <img class="image" src="../acorn/images/캠핑2.jpg" alt="이미지 2">
+          <img class="image" src="../acorn/images/캠핑3.jpg" alt="이미지 3">
+          <img class="image" src="../acorn/images/캠핑4.jpg" alt="이미지 4">
+          <img class="image" src="../acorn/images/캠핑5.jpg" alt="이미지 5">
+        </div>
+      </div>
+
+      <div class="menuWrpa">
+        <div class="menu1">
+
+
+        </div>
+
+        <div class="menu2">
+
+          
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </section>
+
+  <script>
+    // JavaScript로 스와이프 기능 추가
+    const images = document.querySelector('.images');
+    let counter = 0;
+    const imageWidth = document.querySelector('.image').clientWidth;
+
+    function nextImage() {
+      counter++;
+      images.style.transform = `translateX(${-counter * imageWidth}px)`;
+    }
+
+    function prevImage() {
+      counter--;
+      images.style.transform = `translateX(${-counter * imageWidth}px)`;
+    }
+
+    // 예시: 자동 스와이프 기능 추가
+    setInterval(nextImage, 3000); // 3초마다 다음 이미지로 이동
+  </script>
+</body>
+</html>
